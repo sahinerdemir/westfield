@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   animateCursor();
 
+  const cursorEl = document.getElementById('cursor');
+  const followerEl = document.getElementById('cursor-follower');
+
   document.querySelectorAll('a, button, .service-card, .pillar, .industry-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
       follower.style.width = '56px';
