@@ -687,7 +687,7 @@ img { max-width: 100%; display: block; }
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
 }
@@ -728,7 +728,6 @@ img { max-width: 100%; display: block; }
 
 .services-illustration {
   width: 100%;
-  max-width: 340px;
   opacity: 0.9;
 }
 

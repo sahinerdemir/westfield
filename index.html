@@ -236,55 +236,92 @@
           </div>
           <div class="services-right" data-animate="fade-up" data-delay="0.2">
             <div class="services-illustration">
-              <svg viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background circles -->
-                <circle cx="200" cy="240" r="180" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-                <circle cx="200" cy="240" r="130" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-                <circle cx="200" cy="240" r="80" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-                <!-- Central node -->
-                <circle cx="200" cy="240" r="24" fill="rgba(93,173,226,0.2)" stroke="rgba(93,173,226,0.6)" stroke-width="1.5"/>
-                <circle cx="200" cy="240" r="8" fill="rgba(93,173,226,0.8)"/>
-                <!-- Connection lines -->
-                <line x1="200" y1="240" x2="120" y2="140" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="200" y1="240" x2="300" y2="150" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="200" y1="240" x2="100" y2="320" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="200" y1="240" x2="310" y2="330" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="200" y1="240" x2="200" y2="100" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="200" y1="240" x2="200" y2="380" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <!-- Person nodes -->
-                <!-- Top -->
-                <circle cx="200" cy="100" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <circle cx="200" cy="95" r="5" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <path d="M192 106c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <!-- Top-left -->
-                <circle cx="120" cy="140" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <circle cx="120" cy="135" r="5" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <path d="M112 146c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <!-- Top-right -->
-                <circle cx="300" cy="150" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(93,173,226,0.3)" stroke-width="1"/>
-                <circle cx="300" cy="145" r="5" stroke="rgba(93,173,226,0.6)" stroke-width="1" fill="none"/>
-                <path d="M292 156c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="rgba(93,173,226,0.6)" stroke-width="1" fill="none"/>
-                <!-- Bottom-left -->
-                <circle cx="100" cy="320" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(93,173,226,0.3)" stroke-width="1"/>
-                <circle cx="100" cy="315" r="5" stroke="rgba(93,173,226,0.6)" stroke-width="1" fill="none"/>
-                <path d="M92 326c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="rgba(93,173,226,0.6)" stroke-width="1" fill="none"/>
-                <!-- Bottom-right -->
-                <circle cx="310" cy="330" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <circle cx="310" cy="325" r="5" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <path d="M302 336c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <!-- Bottom -->
-                <circle cx="200" cy="380" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <circle cx="200" cy="375" r="5" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <path d="M192 386c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-                <!-- Floating dots -->
-                <circle cx="80" cy="200" r="3" fill="rgba(93,173,226,0.4)"/>
-                <circle cx="340" cy="220" r="3" fill="rgba(93,173,226,0.4)"/>
-                <circle cx="160" cy="400" r="2" fill="rgba(255,255,255,0.2)"/>
-                <circle cx="260" cy="80" r="2" fill="rgba(255,255,255,0.2)"/>
-                <circle cx="60" cy="280" r="2" fill="rgba(93,173,226,0.3)"/>
-                <circle cx="350" cy="280" r="2" fill="rgba(255,255,255,0.15)"/>
-                <!-- Arrow icon in center -->
-                <path d="M194 244l6-8 6 8" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Orbit rings -->
+                <circle cx="250" cy="250" r="220" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 6"/>
+                <circle cx="250" cy="250" r="160" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                <circle cx="250" cy="250" r="95" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+                <!-- Connection lines from center -->
+                <line x1="250" y1="250" x2="250" y2="90" stroke="rgba(93,173,226,0.2)" stroke-width="1.5"/>
+                <line x1="250" y1="250" x2="400" y2="165" stroke="rgba(93,173,226,0.2)" stroke-width="1.5"/>
+                <line x1="250" y1="250" x2="400" y2="345" stroke="rgba(93,173,226,0.2)" stroke-width="1.5"/>
+                <line x1="250" y1="250" x2="250" y2="410" stroke="rgba(93,173,226,0.2)" stroke-width="1.5"/>
+                <line x1="250" y1="250" x2="100" y2="345" stroke="rgba(93,173,226,0.2)" stroke-width="1.5"/>
+                <line x1="250" y1="250" x2="100" y2="165" stroke="rgba(93,173,226,0.2)" stroke-width="1.5"/>
+
+                <!-- Cross connections -->
+                <line x1="250" y1="90" x2="400" y2="165" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="400" y1="165" x2="400" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="100" y1="165" x2="100" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="100" y1="345" x2="250" y2="410" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+                <!-- Animated pulse rings on center -->
+                <circle cx="250" cy="250" r="35" fill="none" stroke="rgba(93,173,226,0.15)" stroke-width="1">
+                  <animate attributeName="r" from="35" to="65" dur="3s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.4" to="0" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="250" cy="250" r="35" fill="none" stroke="rgba(93,173,226,0.15)" stroke-width="1">
+                  <animate attributeName="r" from="35" to="65" dur="3s" begin="1s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.4" to="0" dur="3s" begin="1s" repeatCount="indefinite"/>
+                </circle>
+
+                <!-- Central hub -->
+                <circle cx="250" cy="250" r="36" fill="rgba(93,173,226,0.15)" stroke="rgba(93,173,226,0.5)" stroke-width="2"/>
+                <circle cx="250" cy="250" r="14" fill="rgba(93,173,226,0.7)"/>
+                <!-- WCP arrow in center -->
+                <path d="M244 254l6-9 6 9" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+                <!-- Node: Top (12 o'clock) -->
+                <circle cx="250" cy="90" r="28" fill="rgba(255,255,255,0.07)" stroke="rgba(93,173,226,0.4)" stroke-width="1.5"/>
+                <circle cx="250" cy="82" r="8" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" fill="none"/>
+                <path d="M238 98c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" fill="none"/>
+
+                <!-- Node: Top-right (2 o'clock) -->
+                <circle cx="400" cy="165" r="28" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+                <circle cx="400" cy="157" r="8" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+                <path d="M388 173c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+
+                <!-- Node: Bottom-right (4 o'clock) -->
+                <circle cx="400" cy="345" r="28" fill="rgba(255,255,255,0.07)" stroke="rgba(93,173,226,0.4)" stroke-width="1.5"/>
+                <circle cx="400" cy="337" r="8" stroke="rgba(93,173,226,0.6)" stroke-width="1.2" fill="none"/>
+                <path d="M388 353c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(93,173,226,0.6)" stroke-width="1.2" fill="none"/>
+
+                <!-- Node: Bottom (6 o'clock) -->
+                <circle cx="250" cy="410" r="28" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+                <circle cx="250" cy="402" r="8" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+                <path d="M238 418c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+
+                <!-- Node: Bottom-left (8 o'clock) -->
+                <circle cx="100" cy="345" r="28" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+                <circle cx="100" cy="337" r="8" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+                <path d="M88 353c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" fill="none"/>
+
+                <!-- Node: Top-left (10 o'clock) -->
+                <circle cx="100" cy="165" r="28" fill="rgba(255,255,255,0.07)" stroke="rgba(93,173,226,0.4)" stroke-width="1.5"/>
+                <circle cx="100" cy="157" r="8" stroke="rgba(93,173,226,0.6)" stroke-width="1.2" fill="none"/>
+                <path d="M88 173c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="rgba(93,173,226,0.6)" stroke-width="1.2" fill="none"/>
+
+                <!-- Small floating dots -->
+                <circle cx="170" cy="50" r="3" fill="rgba(93,173,226,0.35)"/>
+                <circle cx="450" cy="250" r="4" fill="rgba(93,173,226,0.25)"/>
+                <circle cx="50" cy="250" r="3" fill="rgba(255,255,255,0.15)"/>
+                <circle cx="330" cy="50" r="2.5" fill="rgba(255,255,255,0.12)"/>
+                <circle cx="340" cy="450" r="3" fill="rgba(93,173,226,0.2)"/>
+                <circle cx="150" cy="450" r="2.5" fill="rgba(255,255,255,0.1)"/>
+                <circle cx="460" cy="120" r="2" fill="rgba(93,173,226,0.3)"/>
+                <circle cx="40" cy="400" r="2" fill="rgba(255,255,255,0.1)"/>
+
+                <!-- Data flow dots on connections -->
+                <circle r="3" fill="rgba(93,173,226,0.8)">
+                  <animateMotion dur="4s" repeatCount="indefinite" path="M250,250 L250,90"/>
+                </circle>
+                <circle r="3" fill="rgba(93,173,226,0.6)">
+                  <animateMotion dur="5s" repeatCount="indefinite" path="M250,250 L400,345"/>
+                </circle>
+                <circle r="3" fill="rgba(93,173,226,0.6)">
+                  <animateMotion dur="4.5s" repeatCount="indefinite" path="M250,250 L100,165"/>
+                </circle>
               </svg>
             </div>
           </div>
