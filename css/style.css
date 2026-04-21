@@ -689,7 +689,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: start;
+  align-items: center;
 }
 
 .services-box .section-tag { color: var(--blue-light); }
@@ -732,7 +732,12 @@ img { max-width: 100%; display: block; }
   opacity: 0.9;
 }
 
-.services-illustration svg { width: 100%; height: auto; }
+.services-illustration svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 420px;
+}
 
 .service-card {
   padding: 20px;
