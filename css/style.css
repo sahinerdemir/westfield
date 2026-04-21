@@ -176,7 +176,6 @@ img { max-width: 100%; display: block; }
   transition: height 0.3s;
 }
 
-.nav.scrolled .nav-logo-img { height: 30px; }
 
 .nav-logo .nav-logo-light { display: none; }
 .nav-logo .nav-logo-dark { display: block; }
