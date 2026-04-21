@@ -188,7 +188,7 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--gray-600);
   transition: color 0.3s;
