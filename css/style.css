@@ -689,7 +689,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
 
 .services-box .section-tag { color: var(--blue-light); }
@@ -700,14 +700,15 @@ img { max-width: 100%; display: block; }
   font-size: 16px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
+
+.services-left > .btn { margin-bottom: 24px; }
 
 .services-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin-bottom: 24px;
 }
 
 .services-box .btn-primary {
