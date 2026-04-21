@@ -653,8 +653,8 @@ img { max-width: 100%; display: block; }
 }
 
 .pillar-icon {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   color: var(--blue);
   margin-bottom: 24px;
 }
