@@ -391,8 +391,10 @@ img { max-width: 100%; display: block; }
 /* ── Award Banner ── */
 .award-banner {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-  padding: 0;
+  margin-top: -1px;
   position: relative;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
   overflow: hidden;
 }
 
@@ -400,7 +402,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 32px 0;
+  padding: 28px 40px;
   justify-content: center;
 }
 
@@ -581,8 +583,11 @@ img { max-width: 100%; display: block; }
   gap: 40px;
   padding: 60px;
   background: var(--bg-alt);
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   border: 1px solid var(--border);
+  border-bottom: none;
+  position: relative;
+  z-index: 2;
 }
 
 .stat { text-align: center; }
