@@ -318,34 +318,6 @@ img { max-width: 100%; display: block; }
   padding: 0 24px;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 100px;
-  padding: 8px 20px;
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 32px;
-  backdrop-filter: blur(10px);
-}
-
-.hero-badge-dot {
-  width: 8px;
-  height: 8px;
-  background: #22c55e;
-  border-radius: 50%;
-  animation: dot-pulse 2s ease-in-out infinite;
-}
-
-@keyframes dot-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
-}
-
 .hero-title {
   font-family: var(--font-serif);
   font-size: clamp(48px, 8vw, 96px);
@@ -405,6 +377,81 @@ img { max-width: 100%; display: block; }
   50% { transform: scaleY(1); transform-origin: top; }
   51% { transform: scaleY(1); transform-origin: bottom; }
   100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+.hero-scroll {
+  animation: fadeInUp 1s var(--ease) 1.2s both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ── Award Banner ── */
+.award-banner {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.award-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 0;
+  justify-content: center;
+}
+
+.award-icon {
+  width: 48px;
+  height: 48px;
+  color: #F59E0B;
+  flex-shrink: 0;
+  animation: award-glow 3s ease-in-out infinite;
+}
+
+@keyframes award-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.3)); }
+  50% { filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.6)); }
+}
+
+.award-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.award-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.1);
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.award-text strong {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.award-by {
+  font-size: 15px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .award-inner { flex-direction: column; text-align: center; gap: 16px; }
+  .award-text { flex-direction: column; gap: 8px; }
 }
 
 /* ── Buttons ── */
