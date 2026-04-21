@@ -519,7 +519,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Section Common ── */
 .section {
-  padding: 120px 0;
+  padding: 80px 0;
   position: relative;
 }
 
@@ -554,7 +554,7 @@ img { max-width: 100%; display: block; }
 .section-header {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 80px;
+  margin: 0 auto 56px;
 }
 
 .text-accent { color: var(--blue); }
@@ -564,9 +564,9 @@ img { max-width: 100%; display: block; }
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: start;
-  margin-bottom: 80px;
+  margin-bottom: 56px;
 }
 
 .about-text {
@@ -856,7 +856,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .testimonials-header .section-title { margin-bottom: 0; }
@@ -983,7 +983,7 @@ img { max-width: 100%; display: block; }
 /* ── Parallax Banner (Dark) ── */
 .parallax-banner {
   position: relative;
-  min-height: 460px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1030,7 +1030,7 @@ img { max-width: 100%; display: block; }
 .careers-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: center;
 }
 
@@ -1080,7 +1080,7 @@ img { max-width: 100%; display: block; }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: start;
 }
 
@@ -1196,7 +1196,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Footer (Dark) ── */
 .footer {
-  padding: 80px 0 40px;
+  padding: 60px 0 32px;
   background: var(--navy);
   color: rgba(255,255,255,0.5);
 }
@@ -1265,7 +1265,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 640px) {
   .nav { padding: 16px 20px; }
-  .section { padding: 80px 0; }
+  .section { padding: 56px 0; }
   .stats { grid-template-columns: 1fr 1fr; padding: 40px 24px; gap: 32px; }
   .stat-number { font-size: 36px; }
   .industries-grid { grid-template-columns: 1fr; }
