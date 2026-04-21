@@ -754,8 +754,10 @@ img { max-width: 100%; display: block; }
 }
 
 .industry-icon {
-  font-size: 36px;
-  margin-bottom: 20px;
+  width: 56px;
+  height: 56px;
+  color: var(--blue);
+  margin: 0 auto 20px;
 }
 
 .industry-card h3 {
