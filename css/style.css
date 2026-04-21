@@ -730,47 +730,87 @@ img { max-width: 100%; display: block; }
   color: var(--gray-500);
 }
 
-/* ── Industries (Light) ── */
-.industries-grid {
+/* ── Industries (List) ── */
+.industries-list {
+  border-top: 1px solid var(--border);
+}
+
+.industry-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  cursor: default;
+  transition: padding-left 0.4s var(--ease), background 0.4s;
 }
 
-.industry-card {
-  padding: 36px 24px;
-  background: var(--bg-alt);
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  text-align: center;
-  transition: border-color 0.4s, transform 0.3s, box-shadow 0.4s;
+.industry-row::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-light));
+  transition: width 0.5s var(--ease);
 }
 
-.industry-card:hover {
-  border-color: rgba(40, 116, 166, 0.15);
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-  background: var(--white);
+.industry-row:hover {
+  padding-left: 2rem;
+  background: linear-gradient(90deg, rgba(40, 116, 166, 0.04), transparent);
 }
 
-.industry-icon {
-  width: 56px;
-  height: 56px;
-  color: var(--blue);
-  margin: 0 auto 20px;
+.industry-row:hover::after { width: 100%; }
+
+.industry-num {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  font-variant-numeric: tabular-nums;
 }
 
-.industry-card h3 {
-  font-size: 17px;
+.industry-name {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   font-weight: 700;
   color: var(--text-heading);
-  margin-bottom: 8px;
+  transition: color 0.4s;
+  margin: 0;
 }
 
-.industry-card p {
-  font-size: 13px;
-  line-height: 1.6;
+.industry-row:hover .industry-name { color: var(--blue); }
+
+.industry-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
   color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  padding: 6px 16px;
+  white-space: nowrap;
+  transition: border-color 0.4s, color 0.4s;
+}
+
+.industry-row:hover .industry-tag {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .industry-row {
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+  }
+  .industry-tag {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: -0.5rem;
+  }
 }
 
 /* ── Testimonials Slider ── */
