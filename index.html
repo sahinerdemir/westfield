@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -275,6 +276,111 @@
     </div>
   </section>
 
+  <!-- Testimonials Slider -->
+  <section class="section section-light testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <div>
+          <span class="section-tag" data-animate="fade-up">Testimonials</span>
+          <h2 class="section-title" data-animate="fade-up" data-delay="0.1">See what our clients are saying.</h2>
+        </div>
+        <div class="testimonials-nav" data-animate="fade-up" data-delay="0.2">
+          <button class="slider-btn slider-prev" id="test-prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="slider-btn slider-next" id="test-next" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper testimonials-swiper" data-animate="fade-up" data-delay="0.3">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg viewBox="0 0 32 32" fill="currentColor" class="quote-icon"><path d="M6 18h6l-4 8h4l4-8V6H6v12zm14 0h6l-4 8h4l4-8V6H20v12z"/></svg>
+              <p>"Westfield Consulting Partners completely transformed our hiring process. They understood exactly the type of engineers we needed and delivered exceptional candidates within weeks, not months."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JM</div>
+              <div>
+                <strong>James Mitchell</strong>
+                <span>VP of Engineering, Apex Industries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg viewBox="0 0 32 32" fill="currentColor" class="quote-icon"><path d="M6 18h6l-4 8h4l4-8V6H6v12zm14 0h6l-4 8h4l4-8V6H20v12z"/></svg>
+              <p>"Their deep understanding of the mechanical engineering space is unmatched. Every candidate they presented was not only technically qualified but also a perfect cultural fit for our team."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SR</div>
+              <div>
+                <strong>Sarah Rodriguez</strong>
+                <span>Director of Operations, NovaTech Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg viewBox="0 0 32 32" fill="currentColor" class="quote-icon"><path d="M6 18h6l-4 8h4l4-8V6H6v12zm14 0h6l-4 8h4l4-8V6H20v12z"/></svg>
+              <p>"We've partnered with many staffing agencies over the years, but WCP stands apart. Their client-centric approach means they genuinely invest in understanding our long-term vision."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DK</div>
+              <div>
+                <strong>David Kim</strong>
+                <span>CTO, Pacific Engineering Group</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg viewBox="0 0 32 32" fill="currentColor" class="quote-icon"><path d="M6 18h6l-4 8h4l4-8V6H6v12zm14 0h6l-4 8h4l4-8V6H20v12z"/></svg>
+              <p>"From civil to robotics engineering, Westfield has been our go-to recruitment partner. They've filled over 30 positions for us with a retention rate that speaks for itself."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">LP</div>
+              <div>
+                <strong>Laura Peterson</strong>
+                <span>HR Director, Summit Infrastructure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg viewBox="0 0 32 32" fill="currentColor" class="quote-icon"><path d="M6 18h6l-4 8h4l4-8V6H6v12zm14 0h6l-4 8h4l4-8V6H20v12z"/></svg>
+              <p>"What impressed me most was how quickly they ramped up our team for a critical project. Within two weeks we had five highly qualified fire protection engineers on board."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RT</div>
+              <div>
+                <strong>Robert Torres</strong>
+                <span>Project Manager, Greenfield Corp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Parallax Banner -->
   <section class="parallax-banner">
     <div class="parallax-bg" data-parallax="0.3"></div>
@@ -444,6 +550,7 @@
   </footer>
 
   <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/main.js"></script>

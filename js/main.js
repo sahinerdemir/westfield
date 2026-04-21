@@ -87,6 +87,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Testimonials Swiper
+  const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    navigation: {
+      prevEl: '#test-prev',
+      nextEl: '#test-next',
+    },
+    breakpoints: {
+      640: { slidesPerView: 1.5, spaceBetween: 20 },
+      900: { slidesPerView: 2.5, spaceBetween: 24 },
+      1200: { slidesPerView: 3, spaceBetween: 28 },
+    },
+  });
+
   // GSAP Animations
   gsap.registerPlugin(ScrollTrigger);
 
