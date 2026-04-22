@@ -696,6 +696,7 @@ img { max-width: 100%; display: block; }
   height: 100%;
 }
 
+.services-left { padding-left: 32px; }
 .services-box .section-tag { color: var(--blue-light); }
 .services-box .section-title { color: var(--white); margin-bottom: 16px; }
 .services-box .text-accent { color: var(--blue-light); }
