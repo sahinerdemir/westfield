@@ -682,6 +682,7 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--blue-light) 100%);
   border-radius: 20px;
   padding: 48px;
+  height: 620px;
   overflow: hidden;
 }
 
