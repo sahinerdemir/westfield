@@ -709,13 +709,6 @@ img { max-width: 100%; display: block; }
 
 .services-left > .btn { margin-bottom: 24px; }
 
-.services-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 32px;
-}
-
 .services-box .btn-primary {
   background: var(--white);
   color: var(--navy);
@@ -744,49 +737,12 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
-.service-card {
-  padding: 28px;
-  background: var(--white);
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  transition: border-color 0.4s, transform 0.3s, box-shadow 0.4s;
-  cursor: default;
-}
-
-.service-card:hover {
-  border-color: rgba(40, 116, 166, 0.15);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.service-card-number {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--blue-light);
-  margin-bottom: 10px;
-}
-
-.service-card h3 {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text-heading);
-  margin-bottom: 8px;
-}
-
-.service-card p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--gray-500);
-}
-
 @media (max-width: 1024px) {
   .services-box { padding: 36px 28px; height: auto; }
-  .services-cards { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
   .services-box { padding: 28px 20px; height: auto; }
-  .services-cards { grid-template-columns: 1fr; }
 }
 
 /* ── Industries (List) ── */
