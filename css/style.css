@@ -691,7 +691,7 @@ img { max-width: 100%; display: block; }
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 0;
   align-items: center;
   height: 100%;
 }
@@ -724,18 +724,21 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .services-illustration {
-  width: 100%;
-  opacity: 0.9;
+  width: 130%;
+  margin-left: -15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .services-illustration svg {
-  width: 130%;
-  height: auto;
+  width: 100%;
+  max-height: 100%;
   display: block;
-  margin-left: -15%;
 }
 
 @media (max-width: 1024px) {
