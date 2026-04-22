@@ -711,8 +711,9 @@ img { max-width: 100%; display: block; }
 
 .services-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
 }
 
 .services-box .btn-primary {
@@ -744,49 +745,48 @@ img { max-width: 100%; display: block; }
 }
 
 .service-card {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background 0.4s, transform 0.3s, border-color 0.4s;
+  padding: 28px;
+  background: var(--white);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  transition: border-color 0.4s, transform 0.3s, box-shadow 0.4s;
   cursor: default;
 }
 
 .service-card:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-3px);
+  border-color: rgba(40, 116, 166, 0.15);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 .service-card-number {
   font-size: 12px;
   font-weight: 700;
   color: var(--blue-light);
-  opacity: 0.6;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .service-card h3 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
-  color: var(--white);
-  margin-bottom: 6px;
+  color: var(--text-heading);
+  margin-bottom: 8px;
 }
 
 .service-card p {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--gray-500);
 }
 
 @media (max-width: 1024px) {
-  .services-box { padding: 36px 28px; }
+  .services-box { padding: 36px 28px; height: auto; }
+  .services-cards { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
-  .services-box { padding: 28px 20px; }
+  .services-box { padding: 28px 20px; height: auto; }
+  .services-cards { grid-template-columns: 1fr; }
 }
 
 /* ── Industries (List) ── */
